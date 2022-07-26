@@ -26,7 +26,7 @@ JOIN users
 ON educations."userId" = users.id
 JOIN schools
 ON educations."schoolId" = schools.id
-WHERE users.id = 30;
+WHERE users.id = 30 AND educations.status = 'finished';
 
 ----------------------------------------
 -- 4
@@ -59,4 +59,3 @@ ON jobs."roleId" = roles.id
 WHERE companies.id = 10 AND roles.name = 'Software Engineer';
 
 ----------------------------------------
-
